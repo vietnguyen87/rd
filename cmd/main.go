@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"runtime"
-	"./lib"
 	"encoding/json"
+	"./../lib"
 )
 
 func main() {
