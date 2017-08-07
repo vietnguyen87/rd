@@ -1,16 +1,16 @@
 # rd
-Rd is a Golang library for R&D team.
+## Rd is a Golang library for R&D team.
 
 https://github.com/vietnguyen87/rd
 
-How to install:
+## How to install:
 
 go get github.com/vietnguyen87/rd
 
-How to use:
+## How to use:
 
 In the example below we call BuildInnerQueriesForSearchProductNewV8 func with some params.
-
+```go
 package main
 
 import (
@@ -31,8 +31,8 @@ func main() {
 	mapB, _ := json.Marshal(matchQuerySlice)
 	fmt.Println(string(mapB))
 }
-
-Parameters Using
+```
+## Parameters Using
 
 matchQuerySlice []interface{}
 keywordFormat   string
