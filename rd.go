@@ -1,4 +1,4 @@
-package lib
+package rd
 
 func BuildInnerQueriesForSearchProductNewV8(matchQuerySlice []interface{}, isSearchInsideCategory bool, keywordFormat string, isAccentMarks bool, firstTerm string) []interface{} {
 	var field1 []string
