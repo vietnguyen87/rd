@@ -33,9 +33,10 @@ func main() {
 }
 ```
 ## Parameters Using
-
+```go
 matchQuerySlice []interface{}
 keywordFormat   string
 isAccentMarks bool
 isSearchInsideCategory bool
 firstTerm string
+```
