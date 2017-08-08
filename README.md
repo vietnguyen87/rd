@@ -34,9 +34,9 @@ func main() {
 ```
 ## Parameters Using
 ```go
-matchQuerySlice []interface{}
-keywordFormat   string
-isAccentMarks bool
-isSearchInsideCategory bool
+matchQuerySlice []interface{}   //Array các tham số cho R&D
+keywordFormat   string          //Từ khóa
+isAccentMarks bool              //Có dấu hay không
+isSearchInsideCategory bool     //Có search trong category hay không
 firstTerm string
 ```
