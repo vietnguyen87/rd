@@ -15,19 +15,17 @@ package main
 
 import (
 	"fmt"
-	"runtime"
-	"./lib"
+	"github.com/vietnguyen87/rd"
 	"encoding/json"
 )
 
 func main() {
-	runtime.GOMAXPROCS(runtime.NumCPU())
 	var matchQuerySlice []interface{}
 	var keywordFormat string
 	var isAccentMarks bool = false
 	var isSearchInsideCategory bool = true
 	var firstTerm 		= ""
-	matchQuerySlice = lib.BuildInnerQueriesForSearchProductNewV8(matchQuerySlice, isSearchInsideCategory, keywordFormat, isAccentMarks, firstTerm)
+	matchQuerySlice = r.BuildInnerQueriesForSearchProductNewV8(matchQuerySlice, isSearchInsideCategory, keywordFormat, isAccentMarks, firstTerm)
 	mapB, _ := json.Marshal(matchQuerySlice)
 	fmt.Println(string(mapB))
 }
